@@ -18,3 +18,10 @@ model.add(Conv2D(96,(11,11), input_shape = (224,224,3),padding = 'same',kernel_r
 model.add(BatchNormalization())
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2,2)))
+
+model.add(Conv2D(256,(5,5),padding = 'same'))
+model.add(BatchNormalization())
+model.add(Activation='relu')
+model.add(MaxPooling2D(pool_size=(2,2)))
+
+
